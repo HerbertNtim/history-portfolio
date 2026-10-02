@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /gender_data/*
 /facelens_venv
 .vscode
@@ -5,3 +6,11 @@
 /notebooks/__pycache__/*
 /cropped_faces/*
 /save_data/*.pickle
+=======
+node_modules
+dist
+.DS_Store
+*.local
+.ref
+hogd.html
+>>>>>>> 3ba74f3 (adding to existing repo)
