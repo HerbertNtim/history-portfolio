@@ -9,29 +9,39 @@ export default function App() {
     <>
       <div className="loader" data-loader="container">
         <div className="loader-progress" data-loader="progress">
-          <span className="loader-progress-number" data-loader="progress-number">
+          <span
+            className="loader-progress-number"
+            data-loader="progress-number"
+          >
             000
           </span>
           <span>%</span>
         </div>
       </div>
 
-      <canvas id="canvas" className="canvas" data-webgl="canvas" aria-hidden="true" />
+      <canvas
+        id="canvas"
+        className="canvas"
+        data-webgl="canvas"
+        aria-hidden="true"
+      />
 
-      <main id="scroll-wrapper" className="scroll-wrapper" data-scroll="wrapper">
+      <main
+        id="scroll-wrapper"
+        className="scroll-wrapper"
+        data-scroll="wrapper"
+      >
         <div className="scroll-content" id="scroll-content">
           <div className="container">
             <section className="welcome" data-welcome="container">
               <div className="welcome-wrapper">
                 <h1 className="welcome-title" data-welcome="title">
-                  Graphic design
+                  Herbert
                   <br />
-                  history
+                  Ntim
                 </h1>
                 <p className="welcome-description" data-welcome="description">
-                  Graphic design is a dynamic field that merge art and technology to convey ideas.
-                  From its early roots in printmaking to the digital age, graphic design has evolved
-                  to become a vital part of our culture.
+                  MPhil. Computer Engineering · Software Engineering · Kumasi, Ghana
                 </p>
                 <div
                   className="welcome-images"
@@ -52,8 +62,18 @@ export default function App() {
                   ))}
                 </div>
               </div>
-              <div className="welcome-scroll" data-welcome="scroll-indicator" data-state="initial">
-                <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 607 16" fill="none" aria-hidden="true">
+              <div
+                className="welcome-scroll"
+                data-welcome="scroll-indicator"
+                data-state="initial"
+              >
+                <svg
+                  className="arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 607 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
                   <path
                     d="M606.707 8.70705C607.098 8.31653 607.098 7.68336 606.707 7.29284L600.343 0.92888C599.953 0.538355 599.319 0.538356 598.929 0.92888C598.538 1.3194 598.538 1.95257 598.929 2.34309L604.586 7.99995L598.929 13.6568C598.538 14.0473 598.538 14.6805 598.929 15.071C599.319 15.4615 599.953 15.4615 600.343 15.071L606.707 8.70705ZM8.74228e-08 9L606 8.99995L606 6.99995L-8.74228e-08 7L8.74228e-08 9Z"
                     fill="currentColor"
@@ -67,19 +87,32 @@ export default function App() {
               <h4 className="intro-title">Intro</h4>
               <p className="intro-description" data-intro="description">
                 Over centuries, <span className="medium">graphic design </span>
-                has helped us to create <span className="medium">visual narratives</span> that impact
-                the way <span className="medium">human communicate</span> with each other. Here are
-                the most <span className="medium">impactful movements</span> that defined its{" "}
-                <span className="medium">evolution</span>.
+                has helped us to create{" "}
+                <span className="medium">visual narratives</span> that impact
+                the way <span className="medium">human communicate</span> with
+                each other. Here are the most{" "}
+                <span className="medium">impactful movements</span> that defined
+                its <span className="medium">evolution</span>.
               </p>
             </section>
 
             <section className="slider" id="slider" data-slider="container">
               {movements.map((movement, index) => (
                 <Fragment key={movement.slug}>
-                  <div className="slide-line" data-slider="line" data-state="hide" />
-                  <div className="slide" id={movement.slug} data-slide="container">
-                    <div className="slide-title-wrapper" data-slide="title-wrapper">
+                  <div
+                    className="slide-line"
+                    data-slider="line"
+                    data-state="hide"
+                  />
+                  <div
+                    className="slide"
+                    id={movement.slug}
+                    data-slide="container"
+                  >
+                    <div
+                      className="slide-title-wrapper"
+                      data-slide="title-wrapper"
+                    >
                       <h2 className="slide-title" data-slide="text">
                         {movement.name}
                       </h2>
@@ -115,10 +148,18 @@ export default function App() {
                   </div>
                 </Fragment>
               ))}
-              <nav id="navigation" data-nav="container" data-state="hide" aria-label="Timeline navigation">
+              <nav
+                id="navigation"
+                data-nav="container"
+                data-state="hide"
+                aria-label="Timeline navigation"
+              >
                 <div className="nav-progress-container">
                   <div className="nav-progress-mask" data-nav="progress-mask" />
-                  <div className="nav-progress-state" data-nav="progress-state" />
+                  <div
+                    className="nav-progress-state"
+                    data-nav="progress-state"
+                  />
                 </div>
                 <div className="nav-wrapper">
                   {movements.map((movement) => (
@@ -157,8 +198,19 @@ export default function App() {
           data-slide-detail="container"
           data-state="hide"
         >
-          <button className="close-wrapper" data-slide-detail="close" aria-label="Close detail panel" type="button">
-            <svg width="30" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <button
+            className="close-wrapper"
+            data-slide-detail="close"
+            aria-label="Close detail panel"
+            type="button"
+          >
+            <svg
+              width="30"
+              viewBox="0 0 51 51"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
               <circle cx="25.5" cy="25.5" r="25" stroke="currentColor" />
               <path
                 d="M18.4663 32.3586L17.6406 31.5329L24.174 24.9996L17.6406 18.4663L18.4663 17.6406L24.9996 24.174L31.5329 17.6406L32.3586 18.4663L25.8253 24.9996L32.3586 31.5329L31.5329 32.3586L24.9996 25.8253L18.4663 32.3586Z"
@@ -175,17 +227,33 @@ export default function App() {
                   <span className="date-end" data-slide-detail="date-end" />
                 </div>
                 <h1 className="title" data-slide-detail="title" />
-                <div className="slide-detail-separator" data-slide-detail="separator" data-state="hide" />
+                <div
+                  className="slide-detail-separator"
+                  data-slide-detail="separator"
+                  data-state="hide"
+                />
               </div>
-              <div className="slide-detail-texts-bottom" data-slide-detail="text">
+              <div
+                className="slide-detail-texts-bottom"
+                data-slide-detail="text"
+              >
                 <div className="description" data-slide-detail="description" />
                 <div className="slide-detail-texts-split">
                   <div className="context" data-slide-detail="context-wrapper">
-                    <div className="slide-detail-subtitle">Historical Context</div>
+                    <div className="slide-detail-subtitle">
+                      Historical Context
+                    </div>
                     <div data-slide-detail="context" />
                   </div>
-                  <div className="slide-detail-line" data-slide-detail="line" data-state="hide" />
-                  <div className="influences" data-slide-detail="influences-wrapper">
+                  <div
+                    className="slide-detail-line"
+                    data-slide-detail="line"
+                    data-state="hide"
+                  />
+                  <div
+                    className="influences"
+                    data-slide-detail="influences-wrapper"
+                  >
                     <div className="slide-detail-subtitle">Key Influences</div>
                     <div data-slide-detail="influences" />
                   </div>
@@ -208,8 +276,9 @@ export default function App() {
               <h4>Graphic Design History</h4>
               <div className="line-horizontal" />
               <div>
-                This website is dedicated to the history of graphic design. We aim to educate and
-                inspire through comprehensive insights and visual examples.
+                This website is dedicated to the history of graphic design. We
+                aim to educate and inspire through comprehensive insights and
+                visual examples.
               </div>
             </div>
             <div className="about-credits">
@@ -241,7 +310,8 @@ export default function App() {
           </div>
         </div>
         <p className="sr-only">
-          Chapman Test Extended font made from Online Web Fonts and licensed by CC BY 4.0.
+          Chapman Test Extended font made from Online Web Fonts and licensed by
+          CC BY 4.0.
         </p>
       </section>
     </>
