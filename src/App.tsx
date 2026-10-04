@@ -41,7 +41,8 @@ export default function App() {
                   Ntim
                 </h1>
                 <p className="welcome-description" data-welcome="description">
-                  MPhil. Computer Engineering · Software Engineering · Kumasi, Ghana
+                  MPhil. Computer Engineering · Software Engineering · Kumasi,
+                  Ghana
                 </p>
                 <div
                   className="welcome-images"
@@ -86,10 +87,21 @@ export default function App() {
             <section className="intro" data-intro="container">
               <h4 className="intro-title">Intro</h4>
               <p className="intro-description" data-intro="description">
-                Software Engineer building full-stack applications with{" "}<span className="medium">TypeScript, React, Next.js, and Python.</span>
-                Previously worked at the{" "}
-                <span className="medium">College of Engineering Examination Office, KNUST</span> where we automated workflows supporting{" "}<span className="medium">10,000+ students</span>. Currently exploring{" "}
-                <span className="medium">data science, machine learning, and deep learning{" "}</span>through hands-on projects.
+                Software Engineer building full-stack applications with{" "}
+                <span className="medium">
+                  TypeScript, React, Next.js, and Python
+                </span>
+                . Experienced in{" "}
+                <span className="medium">
+                  automating workflows and building practical software solutions
+                </span>{" "}
+                for large-scale academic operations, supporting{" "}
+                <span className="medium">10,000+ students</span>. Currently
+                expanding into{" "}
+                <span className="medium">
+                  data science, machine learning, and deep learning
+                </span>
+                .
               </p>
             </section>
 
