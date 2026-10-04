@@ -484,15 +484,26 @@ section {
 .intro-description {
   font-weight: 200;
   line-height: 1.1;
-  font-size: 3.5vw;
-  text-align: center;
+  font-size: clamp(1.25rem, 2.8vw, 2.8rem);
+  text-align: justify;
   width: 60%;
   margin: 0;
 }
 
 @media screen and (max-width: 920px) {
   .intro-description {
-    font-size: 5vw;
+    width: 85%;
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    line-height: 1.25;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro-description {
+    width: 100%;
+    font-size: 1.35;
+    line-height: 1.3;
+    margin: 0 0 0 10px;
   }
 }
 

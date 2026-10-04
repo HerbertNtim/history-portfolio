@@ -86,13 +86,10 @@ export default function App() {
             <section className="intro" data-intro="container">
               <h4 className="intro-title">Intro</h4>
               <p className="intro-description" data-intro="description">
-                Over centuries, <span className="medium">graphic design </span>
-                has helped us to create{" "}
-                <span className="medium">visual narratives</span> that impact
-                the way <span className="medium">human communicate</span> with
-                each other. Here are the most{" "}
-                <span className="medium">impactful movements</span> that defined
-                its <span className="medium">evolution</span>.
+                Software Engineer building full-stack applications with{" "}<span className="medium">TypeScript, React, Next.js, and Python.</span>
+                Previously worked at the{" "}
+                <span className="medium">College of Engineering Examination Office, KNUST</span> where we automated workflows supporting{" "}<span className="medium">10,000+ students</span>. Currently exploring{" "}
+                <span className="medium">data science, machine learning, and deep learning{" "}</span>through hands-on projects.
               </p>
             </section>
 
